@@ -3,6 +3,13 @@ let darkButton = document.getElementById("darkButton");
 
 
 darkButton.addEventListener('click', () => {
-   const elements = document.getElementsByClassName('light');
-   elements.setAttribute('class', 'dark');
-}
+   let element = document.getElementByClass('light')
+   element.classList.remove('light');
+   element.classList.add('dark');
+});
+
+lightButton.addEventListener('click', () => {
+    let elements = document.getElementsByClassName('dark')
+    elements.classList.remove('dark');
+    elements.classList.add('light');
+});
