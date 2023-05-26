@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="lightBackground" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,28 +12,29 @@
     <title>Structure A Webpage</title>
 </head>
 <body>
-    <header>
+    <header class="light">
     <h1>Birdwatching</h1>
     <img src="images/dove.png" alt="a simple dove logo">
     <nav> <ul>
-        <li><a href="#">Home</a></li>
         <li><a href="#">Get Started</a></li>
-        <li><a href="#">Photos</a></li>
+        <li><a href="photos.html">Photos</a></li>
         <li><a href="#">Gear</a></li>
         <li><a href="#">Forum</a></li>
     </ul></nav>
-    <button id="lightButton">Light Mode</button>
-    <button id="darkButton">Dark Mode</button>
+    <div class="buttonSection">
+        <button id="lightButton">Light Mode</button>
+        <button id="darkButton">Dark Mode</button>
+    </div>
 </header>
-<main>   
-    <article>
+<main class="light">   
+    <article class="light">
         <h2>Welcome</h2>
         <p>Welcome to our fake birdwatching site. If this were a real site, it would be the ideal place to come to learn more about birdwatching, whether you are a beginner looking to learn how to get into birding, or an expert wanting to share ideas, tips, and photos with other like-minded people. 
         So don't waste time! Get what you need, then turn off that computer and get out into the great outdoors!
         </p>
     </article>
-    <section>
-        <h3>Ranking Birds by how scary they are</h3>
+    <section class="light">
+        <h2>Ranking Birds by how scary they are</h2>
         <table>
             <tr>
                 <th>Bird Species</th>
@@ -53,21 +54,15 @@
             </tr>
         </table>
     </section>
-    <aside>
-        <h2>Favourite Photos</h2>
-        <a href="images/favorite-1.jpg"><img src="images/favorite-1_th.jpg" alt=""></a>
-        <a href="images/favorite-2.jpg"><img src="images/favorite-2_th.jpg" alt=""></a>
-        <a href="images/favorite-3.jpg"><img src="images/favorite-3_th.jpg" alt=""></a>
-        <a href="images/favorite-4.jpg"><img src="images/favorite-4_th.jpg" alt=""></a>
-    </aside>
+    
     <div>
-        <section class="video">
+        <section class="video light">
             <h2>Video of Shoebill Stork, yikes!</h2>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/AjYqKLmCGvI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </section>
     </div>
 </main>
-<footer>
+<footer class="light">
     <p>This fake website example is CCO - any part of this code may be reused in any way you wish. Original example written by Chris Mills, 2016.</p>
     <p><a href="http://game-icons.net/lorc/originals/dove.html">Dove icon</a> by Lorc.</p>
 </footer>
